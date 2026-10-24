@@ -4,8 +4,6 @@ echo "Hello, World!"
 
 echo "Today is : " $(date)
 
-echo "Running as : " $(id)
-
 echo "Running  as  : " $(whoami)
 
 echo "Current Directory : "  $(pwd)
