@@ -28,4 +28,5 @@ if [ $CMD_01 -ne 0 ] || [ $CMD_02 -ne 0 ] || [ $CMD_03 -ne 0 ];  then
     exit 1
 else  
     echo -e " [INFO] all 3 commands..SUCCESS" 
+    exit 0
 fi
