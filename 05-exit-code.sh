@@ -5,7 +5,7 @@ logs_file=/tmp/exitcodelog.txt
 validate(){
     if [ $1 -ne 0 ]; then
         echo " [ERROR] ${2}..FAILED" 
-        exit 0
+        
     else
         echo -e " [INFO] ${2}..SUCCESS" 
     fi
