@@ -18,7 +18,7 @@ echo "========================================"
 echo "Script PID    : " $$
 echo "Started at    : " $(date)
 echo "User          : " $(whoami)
-echo "OS            : " $(cat /etc/os-release | grep PRETTY|awk -F "=" '{print $2}'| tr -d\")
+echo "OS            : " $(cat /etc/os-release | grep PRETTY|awk -F "=" '{print $2}'| tr -d \")
 echo "Disk (/)      : " $(df -h / | awk 'NR==2 {print $3 " used of " $2}')
 echo "Memory        : " $(free -h --giga | awk '/^Mem:/ {print $3 " used of " $2}')
 echo "Uptime        : " $(uptime | awk '{ print $2 " " $3 " " $4 " " $5}')
