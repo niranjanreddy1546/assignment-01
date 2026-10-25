@@ -12,6 +12,10 @@ if [ $user_id -ne 0 ]; then
     exit 1
 fi
 
+timestamp(){
+    date "+%F %T" 
+}
+
 validate(){
     if [ $1 -ne 0 ]; then
         echo -e "$(timestamp) [ERROR] ${2}..${R}FAILED${N}" | tee -a $logs_file
